@@ -1,0 +1,640 @@
+<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<base href="https://wiki.archlinux.org/index.php/beginners&#39;_guide"><style type="text/css">body { margin-left:0;margin-right:0;margin-top:0; }#google-cache-hdr {background:#f5f5f5 !important;font:13px arial,sans-serif !important;text-align:left !important;color:#202020 !important;border:0 !important;margin:0 !important;border-bottom:1px solid #cecece !important;line-height:16px !important ;padding:16px 28px 24px 28px !important;}#google-cache-hdr * {display:inline !important;font:inherit !important;text-align:inherit !important;color:inherit !important;line-height:inherit !important;background:none !important;border:0 !important;margin:0 !important;padding:0 !important;letter-spacing:0 !important;}#google-cache-hdr a {text-decoration:none !important;color:#1a0dab !important;}#google-cache-hdr a:hover { text-decoration:underline !important; }#google-cache-hdr a:visited { color:#609 !important; }#google-cache-hdr div { display:block !important;margin-top:4px !important; }#google-cache-hdr b {font-weight:bold !important;display:inline-block !important;direction:ltr !important;}</style>
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>Beginners' guide - ArchWiki</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Beginners'_guide","wgTitle":"Beginners' guide","wgCurRevisionId":446855,"wgRevisionId":446855,"wgArticleId":14839,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Getting and installing Arch"],"wgBreakFrames":!1,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Beginners'_guide","wgRelevantArticleId":14839,"wgIsProbablyEditable":!1,"wgRestrictionEdit":[],"wgRestrictionMove":["sysop"]});mw.loader.implement("user.options",function($,jQuery){mw.user.options.set({"variant":"en"});});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\"});});mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits"]);
+} );</script>
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.content.externallinks%7Cmediawiki.skinning.interface%7Cskins.archlinux.styles&amp;only=styles&amp;skin=archlinux" />
+<!--[if IE 6]><link rel="stylesheet" href="/skins/ArchLinux/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/skins/ArchLinux/IE70Fixes.css?303" media="screen" /><![endif]-->
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=styles&amp;skin=archlinux" />
+<style></style>
+<script async="" src="/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=archlinux"></script>
+<meta name="generator" content="MediaWiki 1.26.3" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/opensearch_desc.php" title="ArchWiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="https://wiki.archlinux.org/api.php?action=rsd" />
+<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html" />
+<link rel="alternate" type="application/atom+xml" title="ArchWiki Atom feed" href="/index.php?title=Special:RecentChanges&amp;feed=atom" />
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-Beginners_guide skin-archlinux action-view">
+
+		<div id="archnavbar"><!-- Arch Linux global navigation bar -->
+			<div id="archnavbarlogo">
+				<p><a id="logo" href="https://www.archlinux.org/"></a></p>
+			</div>
+			<div id="archnavbarmenu">
+				<ul id="archnavbarlist">
+					<li id="anb-home"><a href="https://www.archlinux.org/">Home</a></li><li id="anb-packages"><a href="https://www.archlinux.org/packages/">Packages</a></li><li id="anb-forums"><a href="https://bbs.archlinux.org/">Forums</a></li><li id="anb-wiki" class="anb-selected"><a href="https://wiki.archlinux.org/">Wiki</a></li><li id="anb-bugs"><a href="https://bugs.archlinux.org/">Bugs</a></li><li id="anb-aur"><a href="https://aur.archlinux.org/">AUR</a></li><li id="anb-download"><a href="https://www.archlinux.org/download/">Download</a></li>				</ul>
+			</div>
+		</div><!-- #archnavbar -->
+
+		<div id="globalWrapper">
+		<div id="column-content">
+			<div id="content" class="mw-body" role="main">
+				<a id="top"></a>
+				
+				<div class="mw-indicators">
+</div>
+				<h1 id="firstHeading" class="firstHeading" lang="en">Beginners' guide</h1>
+				
+				<div id="bodyContent" class="mw-body-content">
+					<div id="siteSub">From ArchWiki</div>
+					<div id="contentSub"></div>
+										<div id="jump-to-nav" class="mw-jump">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>
+
+					<!-- start content -->
+					<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div style="float:right; clear:right; width:25%; margin: 0 0 0.5em 0.5em;"><p style="background:#333; color:white; padding:0.2em; border-bottom:5px #08c solid; margin:0; text-align:center; font-weight:bold;">Related articles</p><ul style="list-style-type:none; margin:0; padding:0.3em;">
+<li style="padding:0.4em 0; line-height:1;"><a href="/index.php/Category:Accessibility" title="Category:Accessibility">Category:Accessibility</a></li>
+<li style="padding:0.4em 0; line-height:1;"><a href="/index.php/Help:Reading" title="Help:Reading">Help:Reading</a></li>
+<li style="padding:0.4em 0; line-height:1;"><a href="/index.php/Installation_guide" title="Installation guide">Installation guide</a></li>
+<li style="padding:0.4em 0; line-height:1;"><a href="/index.php/General_recommendations" title="General recommendations">General recommendations</a></li>
+<li style="padding:0.4em 0; line-height:1;"><a href="/index.php/General_troubleshooting" title="General troubleshooting">General troubleshooting</a></li>
+</ul></div>
+<p>This document will guide you through the process of installing <a href="/index.php/Arch_Linux" title="Arch Linux">Arch Linux</a> using the <a rel="nofollow" class="external text" href="https://projects.archlinux.org/arch-install-scripts.git/">Arch Install Scripts</a>. Before installing, you are advised to skim over the <a href="/index.php/FAQ" title="FAQ" class="mw-redirect">FAQ</a>.
+</p><p>The community-maintained <a href="/index.php/Main_page" title="Main page">ArchWiki</a> is the primary resource that should be consulted if issues arise. The <a href="/index.php/IRC_channel" title="IRC channel">IRC channel</a> (<a rel="nofollow" class="external free" href="irc://irc.freenode.net/#archlinux">irc://irc.freenode.net/#archlinux</a>) and the <a rel="nofollow" class="external text" href="https://bbs.archlinux.org/">forums</a> are also excellent resources if an answer cannot be found elsewhere. In accordance with <a href="/index.php/The_Arch_Way" title="The Arch Way" class="mw-redirect">the Arch Way</a>, you are encouraged to type <code>man <i>command</i></code> to read the <a href="/index.php/Man_page" title="Man page">man page</a> of any command you are unfamiliar with.
+</p>
+<div style="padding: 5px; margin: 0.50em 0; background-color: #DDFFDD; border: thin solid #BBDDBB; overflow: hidden;"><strong> Tip: </strong>This guide is accessible from the live installation with the <a href="/index.php/ELinks" title="ELinks">ELinks</a> browser, after the <a href="#Connect_to_the_Internet">#Connect to the Internet</a> step. This can be done in a new <a href="https://en.wikipedia.org/wiki/Virtual_console" class="extiw" title="w:Virtual console">virtual console</a>, switching (<code>Alt+arrow</code>) between the console containing the web page, and the console where you are performing the installation. Similarly, the <code>#archlinux</code> <a href="/index.php/IRC" title="IRC" class="mw-redirect">IRC</a> can be accessed using <a href="/index.php/Irssi" title="Irssi">irssi</a>.</div>
+<div id="toc" class="toc"><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Preparation"><span class="tocnumber">1</span> <span class="toctext">Preparation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#UEFI_mode"><span class="tocnumber">1.1</span> <span class="toctext">UEFI mode</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Set_the_keyboard_layout"><span class="tocnumber">1.2</span> <span class="toctext">Set the keyboard layout</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Connect_to_the_Internet"><span class="tocnumber">1.3</span> <span class="toctext">Connect to the Internet</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Update_the_system_clock"><span class="tocnumber">1.4</span> <span class="toctext">Update the system clock</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-6"><a href="#Prepare_the_storage_devices"><span class="tocnumber">2</span> <span class="toctext">Prepare the storage devices</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="#Identify_the_devices"><span class="tocnumber">2.1</span> <span class="toctext">Identify the devices</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="#Partition_the_devices"><span class="tocnumber">2.2</span> <span class="toctext">Partition the devices</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Format_the_partitions"><span class="tocnumber">2.3</span> <span class="toctext">Format the partitions</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Mount_the_partitions"><span class="tocnumber">2.4</span> <span class="toctext">Mount the partitions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-11"><a href="#Installation"><span class="tocnumber">3</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-2 tocsection-12"><a href="#Select_the_mirrors"><span class="tocnumber">3.1</span> <span class="toctext">Select the mirrors</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Install_the_base_packages"><span class="tocnumber">3.2</span> <span class="toctext">Install the base packages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-14"><a href="#Configuration"><span class="tocnumber">4</span> <span class="toctext">Configuration</span></a>
+<ul>
+<li class="toclevel-2 tocsection-15"><a href="#fstab"><span class="tocnumber">4.1</span> <span class="toctext">fstab</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Change_root"><span class="tocnumber">4.2</span> <span class="toctext">Change root</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Locale"><span class="tocnumber">4.3</span> <span class="toctext">Locale</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Time"><span class="tocnumber">4.4</span> <span class="toctext">Time</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Initramfs"><span class="tocnumber">4.5</span> <span class="toctext">Initramfs</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Boot_loader"><span class="tocnumber">4.6</span> <span class="toctext">Boot loader</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Network_configuration"><span class="tocnumber">4.7</span> <span class="toctext">Network configuration</span></a>
+<ul>
+<li class="toclevel-3 tocsection-22"><a href="#Hostname"><span class="tocnumber">4.7.1</span> <span class="toctext">Hostname</span></a></li>
+<li class="toclevel-3 tocsection-23"><a href="#Wired"><span class="tocnumber">4.7.2</span> <span class="toctext">Wired</span></a></li>
+<li class="toclevel-3 tocsection-24"><a href="#Wireless"><span class="tocnumber">4.7.3</span> <span class="toctext">Wireless</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-25"><a href="#Root_password"><span class="tocnumber">4.8</span> <span class="toctext">Root password</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-26"><a href="#Unmount_the_partitions_and_reboot"><span class="tocnumber">5</span> <span class="toctext">Unmount the partitions and reboot</span></a></li>
+<li class="toclevel-1 tocsection-27"><a href="#Post-installation"><span class="tocnumber">6</span> <span class="toctext">Post-installation</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Preparation">Preparation</span></h2>
+<p>Arch Linux should run on any <a href="https://en.wikipedia.org/wiki/P6_(microarchitecture)" class="extiw" title="wikipedia:P6 (microarchitecture)">i686</a> compatible machine with a minimum of 256 MB RAM. A basic installation with all packages from the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/groups/x86_64/base/">base</a></span> group should take less than 800 MB of disk space.
+</p><p>See <a href="/index.php/Category:Getting_and_installing_Arch" title="Category:Getting and installing Arch">Category:Getting and installing Arch</a> for instructions on downloading the installation medium, and methods for booting it to the target machine(s). This guide assumes you use the latest available version.
+</p><p>After booting into the installation media, you will be automatically logged in as the root user and presented with a <a href="/index.php/Zsh" title="Zsh">Zsh</a> shell prompt. For <a href="/index.php/Create" title="Create" class="mw-redirect">modifying or creating</a> configuration files, typically in <code>/etc</code>, <a href="/index.php/Nano#Usage" title="Nano">nano</a> or <a href="/index.php/Vim#Usage" title="Vim">vim</a> are suggested.
+</p>
+<h3><span class="mw-headline" id="UEFI_mode">UEFI mode</span></h3>
+<p>In case you have a <a href="/index.php/UEFI" title="UEFI" class="mw-redirect">UEFI</a> motherboard with UEFI mode enabled, the CD/USB will automatically launch Arch Linux via <a href="/index.php/Systemd-boot" title="Systemd-boot">systemd-boot</a>. 
+</p><p>To verify you are booted in UEFI mode, check that the following directory is populated:
+</p>
+<pre># ls /sys/firmware/efi/efivars
+</pre>
+<p>See <a href="/index.php/UEFI#UEFI_Variables" title="UEFI" class="mw-redirect">UEFI#UEFI Variables</a> for details.
+</p>
+<h3><span class="mw-headline" id="Set_the_keyboard_layout">Set the keyboard layout</span></h3>
+<p>The default <a href="/index.php/Keyboard_configuration_in_console" title="Keyboard configuration in console">console keymap</a> is set to <a href="https://en.wikipedia.org/wiki/File:KB_United_States-NoAltGr.svg" class="extiw" title="wikipedia:File:KB United States-NoAltGr.svg">us</a>. Available choices can be listed with <code>ls /usr/share/kbd/keymaps/**/*.map.gz</code>. 
+</p>
+<div style="padding: 5px; margin: 0.50em 0; background-color: #DDDDFF; border: thin solid #BBBBDD; overflow: hidden;"><strong> Note: </strong><code>localectl list-keymaps</code> does not work due to bug <a rel="nofollow" class="external text" href="https://bugs.archlinux.org/task/46725">FS#46725</a>.</div>
+<p>For example, to change the layout to <code>de-latin1</code>, run:
+</p>
+<pre># loadkeys <i>de-latin1</i>
+</pre>
+<p>If certain characters appear as white squares or other symbols, change the <a href="/index.php/Console_fonts" title="Console fonts" class="mw-redirect">console font</a>. For example:
+</p>
+<pre># setfont <i>lat9w-16</i>
+</pre>
+<h3><span class="mw-headline" id="Connect_to_the_Internet">Connect to the Internet</span></h3>
+<p>The <a href="/index.php/Dhcpcd" title="Dhcpcd">dhcpcd</a> daemon is enabled on boot for <b>wired</b> devices, and will attempt to start a connection. To access captive portal login forms, use the <a href="/index.php/ELinks" title="ELinks">ELinks</a> browser. 
+</p><p>Verify a connection was established, for example with <code>ping archlinux.org</code>. If no connection is available, see <a href="/index.php/Network_configuration" title="Network configuration">Network configuration</a> or follow the below <a href="/index.php/Netctl" title="Netctl">netctl</a> examples. Otherwise, continue to <a href="#Update_the_system_clock">#Update the system clock</a>.
+</p>
+<dl><dt> Netctl preparation</dt></dl>
+<p>To prevent conflicts, <a href="/index.php/Stop" title="Stop" class="mw-redirect">stop</a> the enabled <i>dhcpcd</i> service first, replacing <code><i>enp0s25</i></code> with the correct wired interface:
+</p>
+<pre># systemctl stop dhcpcd@<i>enp0s25</i>.service
+</pre>
+<p><a href="/index.php/Network_configuration#Device_names" title="Network configuration">Interfaces</a> can be listed using <code>ip link</code>, or <code>iw dev</code> for wireless devices. They are prefixed with <code>en</code> (ethernet), <code>wl</code> (WLAN), or <code>ww</code> (WWAN).
+</p>
+<dl><dt> Wireless</dt></dl>
+<p><a href="/index.php/Wireless_network_configuration#Getting_some_useful_information" title="Wireless network configuration">List available networks</a>, and make a connection for a specified interface:
+</p>
+<pre># wifi-menu -o <i>wlp2s0</i>
+</pre>
+<p>The resulting configuration file is stored in <code>/etc/netctl</code>. For networks which require both a username and password, see <a href="/index.php/WPA2_Enterprise#netctl" title="WPA2 Enterprise">WPA2 Enterprise#netctl</a>.
+</p>
+<dl><dt> Other</dt></dl>
+<p>Several example profiles, such as for configuring a <a href="/index.php/Network_configuration#Static_IP_address" title="Network configuration">static IP address</a>, are available. Copy the required one to <code>/etc/netctl</code>, for example <code><i>ethernet-static</i></code>:
+</p>
+<pre># cp /etc/netctl/examples/<i>ethernet-static</i> /etc/netctl
+</pre>
+<p>Adjust the copy as needed, and enable it:
+</p>
+<pre># netctl start <i>ethernet-static</i>
+</pre>
+<h3><span class="mw-headline" id="Update_the_system_clock">Update the system clock</span></h3>
+<p>Use <a href="/index.php/Systemd-timesyncd" title="Systemd-timesyncd">systemd-timesyncd</a> to ensure that your system clock is accurate. To start it:
+</p>
+<pre># timedatectl set-ntp true
+</pre>
+<p>To check the service status, use <code>timedatectl status</code>.
+</p>
+<h2><span class="mw-headline" id="Prepare_the_storage_devices">Prepare the storage devices</span></h2>
+<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;"><strong> Warning: </strong>In general, partitioning or formatting will make existing data inaccessible and subject to being overwritten, i.e. destroyed, by subsequent operations. For this reason, all data that needs to be preserved must be backed up before proceeding.</div>
+<p>In this step, the storage devices that will be used by the new system will be prepared. Read <a href="/index.php/Partitioning" title="Partitioning">Partitioning</a> for a more general overview.
+</p><p>Users intending to create stacked block devices for <a href="/index.php/LVM" title="LVM">LVM</a>, <a href="/index.php/Disk_encryption" title="Disk encryption">disk encryption</a> or <a href="/index.php/RAID" title="RAID">RAID</a>, should keep those instructions in mind when preparing the partitions. If intending to install to a USB flash key, see <a href="/index.php/Installing_Arch_Linux_on_a_USB_key" title="Installing Arch Linux on a USB key">Installing Arch Linux on a USB key</a>.
+</p>
+<h3><span class="mw-headline" id="Identify_the_devices">Identify the devices</span></h3>
+<p><a href="/index.php/File_systems#Identify_the_devices" title="File systems">Identify the devices</a> where the new system will be installed:
+</p>
+<pre># lsblk
+</pre>
+<p>Not all devices listed are viable mediums for installation; results ending in <code>rom</code>, <code>loop</code> or <code>airoot</code> can be ignored.
+</p>
+<div style="padding: 5px; margin: 0.50em 0; background-color: #DDDDFF; border: thin solid #BBBBDD; overflow: hidden;"><strong> Note: </strong>In the sections below, the <code>sd<b>xy</b></code> notation will be used (<code><b>x</b></code> for the device, <code><b>y</b></code> for an existing partition).</div>
+<p>If the existing partition scheme does not need to be changed, you may skip to <a href="#Format_the_partitions">#Format the partitions</a>.
+</p>
+<h3><span class="mw-headline" id="Partition_the_devices">Partition the devices</span></h3>
+<p><a href="/index.php/Partition" title="Partition" class="mw-redirect">Partitioning</a> a hard drive divides the available space into sections that can be accessed independently. The required information is stored in a <i>partition table</i> using a format such as <a href="/index.php/MBR" title="MBR" class="mw-redirect">MBR</a> or <a href="/index.php/GPT" title="GPT" class="mw-redirect">GPT</a>. Existing tables can be printed with <code>parted /dev/sd<b>x</b> print</code> or <code>fdisk -l /dev/sd<b>x</b></code>.
+</p><p>To partition devices, use a <a href="/index.php/Partitioning#Partitioning_tools" title="Partitioning">partitioning tool</a> compatible to the chosen type of partition table. Incompatible tools may result in the destruction of that table, along with existing partitions or data. Choices include:
+</p>
+<table class="wikitable">
+<tr>
+<th> Name
+</th>
+<th> MBR
+</th>
+<th> GPT
+</th>
+<th> Variants
+</th></tr>
+<tr>
+<td> <a href="/index.php/Fdisk" title="Fdisk">fdisk</a>
+</td>
+<td style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td> <i>sfdisk</i>, <i>cfdisk</i>
+</td></tr>
+<tr>
+<td> <a href="/index.php/Gdisk" title="Gdisk" class="mw-redirect">gdisk</a>
+</td>
+<td style="background: #faa; color: inherit; vertical-align: middle; text-align: center;">No
+</td>
+<td style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td> <i>cgdisk</i>, <i>sgdisk</i>
+</td></tr>
+<tr>
+<td> <a href="/index.php/Parted" title="Parted" class="mw-redirect">parted</a>
+</td>
+<td style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td style="background: #afa; color: inherit; vertical-align: middle; text-align: center;">Yes
+</td>
+<td> <a href="/index.php/GParted" title="GParted">GParted</a>
+</td></tr>
+</table>
+<p>The examples below demonstrate a basic <a href="/index.php/Partition_scheme" title="Partition scheme" class="mw-redirect">partition scheme</a> for both types of partition tables. They assume that a new, contiguous layout is applied to a single device in <code>/dev/sd<b>x</b></code>. Necessary changes to device names and partition numbers must be done beforehand.
+</p>
+<table class="wikitable">
+<tr>
+<th colspan="5"> UEFI/GPT example layout
+</th></tr>
+<tr>
+<th> Mount point
+</th>
+<th> Partition
+</th>
+<th> <a href="https://en.wikipedia.org/wiki/GUID_Partition_Table#Partition_type_GUIDs" class="extiw" title="w:GUID Partition Table">Partition type (GUID)</a>
+</th>
+<th> Bootable flag
+</th>
+<th> Suggested size
+</th></tr>
+<tr>
+<td> /boot
+</td>
+<td> /dev/sd<b>x</b>1
+</td>
+<td> <a href="/index.php/EFI_System_Partition" title="EFI System Partition">EFI System Partition</a>
+</td>
+<td> Yes
+</td>
+<td> 260–512 MiB
+</td></tr>
+<tr>
+<td> [SWAP]
+</td>
+<td> /dev/sd<b>x</b>2
+</td>
+<td> Linux <a href="/index.php/Swap" title="Swap">swap</a>
+</td>
+<td> No
+</td>
+<td> More than 512 MiB
+</td></tr>
+<tr>
+<td> /
+</td>
+<td> /dev/sd<b>x</b>3
+</td>
+<td> Linux
+</td>
+<td> No
+</td>
+<td> Remainder of the device
+</td></tr>
+<tr>
+<th colspan="5"> MBR/BIOS example layout
+</th></tr>
+<tr>
+<th> Mount point
+</th>
+<th> Partition
+</th>
+<th> <a href="https://en.wikipedia.org/wiki/Partition_type" class="extiw" title="w:Partition type">Partition type</a>
+</th>
+<th> Bootable flag
+</th>
+<th> Suggested size
+</th></tr>
+<tr>
+<td> [SWAP]
+</td>
+<td> /dev/sd<b>x</b>1
+</td>
+<td> Linux <a href="/index.php/Swap" title="Swap">swap</a>
+</td>
+<td> No
+</td>
+<td> More than 512 MiB
+</td></tr>
+<tr>
+<td> /
+</td>
+<td> /dev/sd<b>x</b>2
+</td>
+<td> Linux
+</td>
+<td> Yes
+</td>
+<td> Remainder of the device
+</td></tr></table>
+<h3><span class="mw-headline" id="Format_the_partitions">Format the partitions</span></h3>
+<div style="padding: 5px; margin: 0.50em 0; background-color: #FFDDDD; border: thin solid #DDBBBB; overflow: hidden;"><strong> Warning: </strong>If <a href="/index.php/Dual_boot_with_Windows" title="Dual boot with Windows">dual-booting</a> with an existing installation of Windows on a UEFI/GPT system, avoid reformatting the UEFI partition, as this includes the Windows <i>.efi</i> file required to boot it.</div>
+<p>Once the partitions have been created, each <b>must</b> be formatted with an appropriate <a href="/index.php/File_system" title="File system" class="mw-redirect">file system</a>, <i>except</i> for <a href="/index.php/Swap" title="Swap">swap</a> partitions. All available partitions on the intended installation device can be listed with the following command:
+</p>
+<pre># lsblk /dev/sd<b>x</b>
+</pre>
+<p>With the exceptions noted below, it is recommended to use the <code>ext4</code> file system:
+</p>
+<pre># mkfs.ext4 /dev/sd<b>xy</b>
+</pre>
+<p>If a swap partition was created, it must be set up and activated with:
+</p>
+<pre># mkswap /dev/sd<b>xy</b>
+# swapon /dev/sd<b>xy</b>
+</pre>
+<p>If a <b>new</b> UEFI system partition has been created on a UEFI/GPT system, it <b>must</b> be formatted with a <code>fat32</code> file system:
+</p>
+<pre># mkfs.fat -F32 /dev/sd<b>xy</b>
+</pre>
+<h3><span class="mw-headline" id="Mount_the_partitions">Mount the partitions</span></h3>
+<p>Mount the <i>root</i> partition to the <code>/mnt</code> directory of the live system:
+</p>
+<pre># mount /dev/sd<b>xy</b> /mnt
+</pre>
+<p>Remaining <a href="/index.php/Partitioning#Partition_scheme" title="Partitioning">partitions</a> except <i>swap</i> may be mounted in any order, after creating the respective mount points. For example, when using a <code>/boot</code> partition:
+</p>
+<pre># mkdir -p /mnt/boot
+# mount /dev/sd<b>xy</b> /mnt/boot
+</pre>
+<p><code>/mnt/boot</code> is also recommended for mounting the (formatted or already existing) EFI System Partition on a UEFI/GPT system. See <a href="/index.php/EFISTUB" title="EFISTUB">EFISTUB</a> and related articles for alternatives.
+</p>
+<h2><span class="mw-headline" id="Installation">Installation</span></h2>
+<h3><span class="mw-headline" id="Select_the_mirrors">Select the mirrors</span></h3>
+<p>Packages to be installed must be downloaded from <a href="/index.php/Mirror" title="Mirror" class="mw-redirect">mirror</a> servers, which are defined in <code>/etc/pacman.d/mirrorlist</code>. On the live system, all mirrors are enabled, and sorted by their synchronization status and speed at the time the installation image was created.
+</p><p>The higher a mirror is placed in the list, the more priority it is given when downloading a package. You may want to edit the file accordingly, and move the geographically closest mirrors to the top of the list, although other criteria should be taken into account.
+</p><p>The <i>pacstrap</i> tool used in the next step also installs a copy of the file to the new system, so it is worth getting right.
+</p>
+<h3><span class="mw-headline" id="Install_the_base_packages">Install the base packages</span></h3>
+<p>Execute the <a rel="nofollow" class="external text" href="https://git.archlinux.org/arch-install-scripts.git/tree/pacstrap.in">pacstrap</a> script:
+</p>
+<pre># pacstrap /mnt
+</pre>
+<p>which defaults to install the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/groups/x86_64/base/">base</a></span> group of packages.
+</p><p>This group represents the recommended minimum of packages for an Arch Linux installation. The group does not include all tools from the live installation, such as <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/packages/?name=btrfs-progs">btrfs-progs</a></span>; see <a rel="nofollow" class="external text" href="https://projects.archlinux.org/archiso.git/tree/configs/releng/packages.both">packages.both</a> for comparison.
+</p><p>To build packages from the <a href="/index.php/AUR" title="AUR" class="mw-redirect">AUR</a> or with the <a href="/index.php/ABS" title="ABS" class="mw-redirect">ABS</a>, the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/groups/x86_64/base-devel/">base-devel</a></span> group is also required. Packages can be <a href="/index.php/Install" title="Install" class="mw-redirect">installed</a> with <span class="plainlinks archwiki-template-man" title="$ man 8 pacman"><a rel="nofollow" class="external text" href="https://www.archlinux.org/pacman/pacman.8.html">pacman(8)</a></span> anytime after the <a href="#Change_root">#Change root</a> step later, or by appending their names to the <i>pacstrap</i> command. For example:
+</p>
+<pre># pacstrap -i /mnt base base-devel btrfs-progs
+</pre>
+<p>The <code>-i</code> switch ensures prompting before package installation. 
+</p><p>With the base group, the first <a href="/index.php/Initramfs" title="Initramfs" class="mw-redirect">initramfs</a> will be generated and installed to the new system's boot path; double-check output prompts <code>==&gt; Image creation successful</code> for it.
+</p>
+<h2><span class="mw-headline" id="Configuration">Configuration</span></h2>
+<h3><span class="mw-headline" id="fstab">fstab</span></h3>
+<p>Generate an <a href="/index.php/Fstab" title="Fstab">fstab</a> file. The <code>-U</code> option indicates <a href="/index.php/UUID" title="UUID" class="mw-redirect">UUIDs</a>. Labels can be used instead through the <code>-L</code> option.
+</p>
+<pre># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</pre>
+<p>Check the resulting file in <code>/mnt/etc/fstab</code> afterwards, and edit it in case of errors.
+</p>
+<h3><span class="mw-headline" id="Change_root">Change root</span></h3>
+<p><a href="/index.php/Chroot#Change_root" title="Chroot" class="mw-redirect">Chroot</a> to the new system:
+</p>
+<pre># arch-chroot /mnt /bin/bash
+</pre>
+<h3><span class="mw-headline" id="Locale">Locale</span></h3>
+<p>The <a href="/index.php/Locale" title="Locale">Locale</a> defines which language the system uses, and other regional considerations such as currency denomination, numerology, and character sets.
+</p><p>Uncomment <code>en_US.UTF-8 UTF-8</code> in <code>/etc/locale.gen</code>, as well as other needed localisations. Save the file, and generate the new locales:
+</p>
+<pre># locale-gen
+</pre>
+<p><a href="/index.php/Create" title="Create" class="mw-redirect">Create</a> <code>/etc/locale.conf</code>, where <code><i>en_US.UTF-8</i></code> refers to the <b>first column</b> of an uncommented entry in <code>/etc/locale.gen</code>:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/locale.conf</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">LANG=<i>en_US.UTF-8</i></pre>
+<p>If you <a href="#Set_the_keyboard_layout">set the keyboard layout</a>, make the changes persistent in <code>/etc/vconsole.conf</code>. For example, if <code>de-latin1</code> was set with <i>loadkeys</i>, and <code>lat9w-16</code> with <i>setfont</i>, assign the <code>KEYMAP</code> and <code>FONT</code> variables accordingly:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/vconsole.conf</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">KEYMAP=<i>de-latin1</i>
+FONT=<i>lat9w-16</i></pre>
+<h3><span class="mw-headline" id="Time">Time</span></h3>
+<p>Select a <a href="/index.php/Time_zone" title="Time zone" class="mw-redirect">time zone</a>:
+</p>
+<pre># tzselect
+</pre>
+<p>Create the symbolic link <code>/etc/localtime</code>, where <code>Zone/Subzone</code> is the <code>TZ</code> value from <i>tzselect</i>:
+</p>
+<pre># ln -s /usr/share/zoneinfo/<i>Zone</i>/<i>SubZone</i> /etc/localtime
+</pre>
+<p>It is recommended to adjust the time skew, and set the time standard to UTC:
+</p>
+<pre># hwclock --systohc --utc
+</pre>
+<p>If other operating systems are installed on the machine, they must be configured accordingly. See <a href="/index.php/Time" title="Time">Time</a> for details.
+</p>
+<h3><span class="mw-headline" id="Initramfs">Initramfs</span></h3>
+<p>Because <a href="/index.php/Mkinitcpio" title="Mkinitcpio">mkinitcpio</a> was run on installation of <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/packages/?name=linux">linux</a></span> with <i>pacstrap</i>, most users do not need to regenerate the intramfs image so this step can be skipped.
+</p><p>For special configurations, set the correct <a href="/index.php/Mkinitcpio#HOOKS" title="Mkinitcpio">hooks</a> in <code>/etc/mkinitcpio.conf</code> and <a href="/index.php/Mkinitcpio#Image_creation_and_activation" title="Mkinitcpio">re-generate</a> the initramfs image:
+</p>
+<pre># mkinitcpio -p linux
+</pre>
+<h3><span class="mw-headline" id="Boot_loader">Boot loader</span></h3>
+<p>See <a href="/index.php/Category:Boot_loaders" title="Category:Boot loaders">Category:Boot loaders</a> for available choices and configurations. Choices include <a href="/index.php/GRUB" title="GRUB">GRUB</a> (BIOS/UEFI), <a href="/index.php/Systemd-boot" title="Systemd-boot">systemd-boot</a> (UEFI) and <a href="/index.php/Syslinux" title="Syslinux">syslinux</a> (BIOS).
+</p><p>If you have an Intel CPU, in addition to installing a boot loader, install the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/packages/?name=intel-ucode">intel-ucode</a></span> package and <a href="/index.php/Microcode#Enabling_Intel_microcode_updates" title="Microcode">enable microcode updates</a>.
+</p>
+<h3><span class="mw-headline" id="Network_configuration">Network configuration</span></h3>
+<p>The procedure is similar to <a href="#Connect_to_the_Internet">#Connect to the Internet</a> for the live installation environment, except made persistent for subsequent boots.
+</p>
+<h4><span class="mw-headline" id="Hostname">Hostname</span></h4>
+<p>Set the <a href="/index.php/Hostname" title="Hostname" class="mw-redirect">hostname</a> by <a href="/index.php/Add" title="Add" class="mw-redirect">adding</a> an entry to <code>/etc/hostname</code>, where <i>myhostname</i> is the desired host name:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/hostname</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;"><i>myhostname</i></pre>
+<p>It is recommended to append the same host name to <code>/etc/hosts</code>, for example:
+</p>
+<pre style="margin-bottom: 0; border-bottom:none; padding-bottom:0.8em;">/etc/hosts</pre>
+<pre style="margin-top: 0; border-top-style:dashed; padding-top: 0.8em;">127.0.0.1	localhost.localdomain	localhost	 <i>myhostname</i>
+::1		localhost.localdomain	localhost	 <i>myhostname</i></pre>
+<h4><span class="mw-headline" id="Wired">Wired</span></h4>
+<p>When only requiring a single wired connection, <a href="/index.php/Enable" title="Enable" class="mw-redirect">enable</a> the <a href="/index.php/Dhcpcd" title="Dhcpcd">dhcpcd</a> service:
+</p>
+<pre># systemctl enable dhcpcd@<i>interface</i>.service
+</pre>
+<p>Where <code><i>interface</i></code> is an ethernet <a href="/index.php/Network_configuration#Device_names" title="Network configuration">device name</a>.
+</p><p>See <a href="/index.php/Network_configuration#Configure_the_IP_address" title="Network configuration">Network configuration#Configure the IP address</a> for other available methods.
+</p>
+<h4><span class="mw-headline" id="Wireless">Wireless</span></h4>
+<p><a href="/index.php/Install" title="Install" class="mw-redirect">Install</a> the <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/packages/?name=iw">iw</a></span>, <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/packages/?name=wpa_supplicant">wpa_supplicant</a></span>, and (for <a href="/index.php/Netctl#Wireless_.28WPA-PSK.29" title="Netctl">wifi-menu</a>) <span class="plainlinks archwiki-template-pkg"><a rel="nofollow" class="external text" href="https://www.archlinux.org/packages/?name=dialog">dialog</a></span> packages:
+</p>
+<pre># pacman -S iw wpa_supplicant dialog
+</pre>
+<p>Additional <a href="/index.php/Wireless#Installing_driver.2Ffirmware" title="Wireless" class="mw-redirect">firmware packages</a> may also be required. When using <i>wifi-menu</i>, do so after <a href="#Unmount_the_partitions_and_reboot">#Unmount the partitions and reboot</a>.
+</p><p>See <a href="/index.php/Wireless#Wireless_management" title="Wireless" class="mw-redirect">Wireless#Wireless management</a> for other available methods.
+</p>
+<h3><span class="mw-headline" id="Root_password">Root password</span></h3>
+<p>Set the root <a href="/index.php/Password" title="Password" class="mw-redirect">password</a> with:
+</p>
+<pre># passwd
+</pre>
+<h2><span class="mw-headline" id="Unmount_the_partitions_and_reboot">Unmount the partitions and reboot</span></h2>
+<p>Exit from the chroot environment by running <code>exit</code> or pressing <code>Ctrl+D</code>. 
+</p><p>Partitions will be unmounted automatically by <i>systemd</i> on shutdown. You may however unmount manually as a safety measure:
+</p>
+<pre># umount -R /mnt
+</pre>
+<p>If the partition is "busy", you can find the cause with <a href="/index.php/Fuser" title="Fuser" class="mw-redirect">fuser</a>. Reboot the computer. 
+</p>
+<pre># reboot
+</pre>
+<p>Remove the installation media, or you may boot back into it. You can log into your new installation as <i>root</i>, using the password you specified with <i>passwd</i>.
+</p>
+<h2><span class="mw-headline" id="Post-installation">Post-installation</span></h2>
+<p>Your new Arch Linux base system is now a functional GNU/Linux environment ready to be built into whatever you wish or require for your purposes. You are now <i>strongly</i> advised to read the <a href="/index.php/General_recommendations" title="General recommendations">General recommendations</a> article, especially the first two sections. Its other sections provide links to post-installation tutorials like setting up a graphical user interface, sound or a touchpad.
+</p><p>For particular areas of interest, see the <a href="/index.php/List_of_applications" title="List of applications">List of applications</a>.
+</p>
+<!-- 
+NewPP limit report
+Cached time: 20160821035048
+Cache expiry: 86400
+Dynamic content: false
+CPU time usage: 0.050 seconds
+Real time usage: 0.058 seconds
+Preprocessor visited node count: 866/1000000
+Preprocessor generated node count: 2474/1000000
+Post‐expand include size: 10975/2097152 bytes
+Template argument size: 4718/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   38.008      1 - -total
+ 18.38%    6.986     57 - Template:Ic
+ 11.19%    4.252      5 - Template:Yes
+  9.73%    3.700      5 - Template:META_Box
+  9.04%    3.437      2 - Template:Note
+  7.22%    2.744      1 - Template:G
+  7.10%    2.700      2 - Template:META_Box_Blue
+  7.05%    2.681      1 - Template:No
+  6.48%    2.464      1 - Template:Tip
+  5.98%    2.273      2 - Template:Warning
+-->
+
+<!-- Saved in parser cache with key archwiki:pcache:idhash:14839-0!*!0!!en!*!* and timestamp 20160821035048 and revision id 446855
+ -->
+</div><div class="printfooter">
+Retrieved from "<a dir="ltr" href="https://wiki.archlinux.org/index.php?title=Beginners%27_guide&amp;oldid=446855">https://wiki.archlinux.org/index.php?title=Beginners%27_guide&amp;oldid=446855</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/index.php/Category:Getting_and_installing_Arch" title="Category:Getting and installing Arch">Getting and installing Arch</a></li></ul></div></div>					<!-- end content -->
+										<div class="visualClear"></div>
+				</div>
+			</div>
+		</div>
+		<div id="column-one">
+			<h2>Navigation menu</h2>
+					<div id="p-cactions" class="portlet" role="navigation">
+			<h3>Views</h3>
+
+			<div class="pBody">
+				<ul>
+				<li id="ca-nstab-main" class="selected"><a href="/index.php/Beginners%27_guide" title="View the content page [c]" accesskey="c">Page</a></li>
+				<li id="ca-talk"><a href="/index.php/Talk:Beginners%27_guide" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Discussion</a></li>
+				<li id="ca-viewsource"><a href="/index.php?title=Beginners%27_guide&amp;action=edit" title="This page is protected.&#10;You can view its source [e]" accesskey="e">View source</a></li>
+				<li id="ca-history"><a href="/index.php?title=Beginners%27_guide&amp;action=history" title="Past revisions of this page [h]" accesskey="h">History</a></li>
+				</ul>
+							</div>
+		</div>
+				<div class="portlet" id="p-personal" role="navigation">
+				<h3>Personal tools</h3>
+
+				<div class="pBody">
+					<ul>
+													<li id="pt-createaccount"><a href="/index.php?title=Special:UserLogin&amp;returnto=Beginners%27+guide&amp;type=signup" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li>
+													<li id="pt-login"><a href="/index.php?title=Special:UserLogin&amp;returnto=Beginners%27+guide" title="You are encouraged to log in; however, it is not mandatory [o]" accesskey="o">Log in</a></li>
+											</ul>
+				</div>
+			</div>
+			<div class="portlet" id="p-logo" role="banner">
+				<a href="/index.php/Main_page" class="mw-wiki-logo" title="Visit the main page"></a>
+			</div>
+				<div class="generated-sidebar portlet" id="p-navigation" role="navigation">
+		<h3>Navigation</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-mainpage-description"><a href="/index.php/Main_page" title="Visit the main page [z]" accesskey="z">Main page</a></li>
+											<li id="n-categories"><a href="/index.php/Table_of_contents">Categories</a></li>
+											<li id="n-portal"><a href="/index.php/Getting_involved" title="Various ways Archers can contribute to the community">Getting involved</a></li>
+											<li id="n-currentevents"><a href="/index.php/ArchWiki:News" title="The latest lowdown on the wiki">Wiki news</a></li>
+											<li id="n-randompage"><a href="/index.php/Special:Random" title="Load a random page [x]" accesskey="x">Random page</a></li>
+									</ul>
+					</div>
+		</div>
+			<div id="p-search" class="portlet" role="search">
+			<h3><label for="searchInput">Search</label></h3>
+
+			<div id="searchBody" class="pBody">
+				<form action="/index.php" id="searchform">
+					<input type='hidden' name="title" value="Special:Search"/>
+					<input type="search" name="search" placeholder="Search" title="Search ArchWiki [f]" accesskey="f" id="searchInput" />
+					<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchGoButton" class="searchButton" />&#160;
+						<input type="submit" name="fulltext" value="Search" title="Search the pages for this text" id="mw-searchButton" class="searchButton" />
+				</form>
+
+							</div>
+		</div>
+		<div class="generated-sidebar portlet" id="p-interaction" role="navigation">
+		<h3>interaction</h3>
+		<div class='pBody'>
+							<ul>
+											<li id="n-help"><a href="/index.php/Category:Help" title="Wiki navigation, reading, and editing help">Help</a></li>
+											<li id="n-Contributing"><a href="/index.php/ArchWiki:Contributing">Contributing</a></li>
+											<li id="n-recentchanges"><a href="/index.php/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li>
+											<li id="n-Recent-talks"><a href="https://wiki.archlinux.org/index.php/Special:RecentChanges?namespace=0&amp;invert=1" rel="nofollow">Recent talks</a></li>
+											<li id="n-newpages"><a href="/index.php/Special:NewPages">New pages</a></li>
+											<li id="n-Statistics"><a href="/index.php/ArchWiki:Statistics">Statistics</a></li>
+											<li id="n-Reports"><a href="/index.php/ArchWiki:Reports">Reports</a></li>
+											<li id="n-Requests"><a href="/index.php/ArchWiki:Requests">Requests</a></li>
+									</ul>
+					</div>
+		</div>
+			<div class="portlet" id="p-tb" role="navigation">
+			<h3>Tools</h3>
+
+			<div class="pBody">
+				<ul>
+											<li id="t-whatlinkshere"><a href="/index.php/Special:WhatLinksHere/Beginners%27_guide" title="A list of all wiki pages that link here [j]" accesskey="j">What links here</a></li>
+											<li id="t-recentchangeslinked"><a href="/index.php/Special:RecentChangesLinked/Beginners%27_guide" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
+											<li id="t-specialpages"><a href="/index.php/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
+											<li id="t-print"><a href="/index.php?title=Beginners%27_guide&amp;printable=yes" rel="alternate" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>
+											<li id="t-permalink"><a href="/index.php?title=Beginners%27_guide&amp;oldid=446855" title="Permanent link to this revision of the page">Permanent link</a></li>
+											<li id="t-info"><a href="/index.php?title=Beginners%27_guide&amp;action=info" title="More information about this page">Page information</a></li>
+									</ul>
+							</div>
+		</div>
+				<div id="p-lang" class="portlet" role="navigation">
+				<h3>In other languages</h3>
+
+				<div class="pBody">
+					<ul>
+													<li class="interlanguage-link interwiki-ar"><a href="https://wiki.archlinux.org/index.php/Beginners%27_guide_(%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9)" title="Beginners' guide – العربية" lang="ar" hreflang="ar">العربية</a></li>
+													<li class="interlanguage-link interwiki-bg"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(%D0%91%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8)" title="Installation guide – български" lang="bg" hreflang="bg">Български</a></li>
+													<li class="interlanguage-link interwiki-cs"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(%C4%8Cesky)" title="Installation guide – čeština" lang="cs" hreflang="cs">Čeština</a></li>
+													<li class="interlanguage-link interwiki-da"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Dansk)" title="Installation guide – dansk" lang="da" hreflang="da">Dansk</a></li>
+													<li class="interlanguage-link interwiki-de"><a href="https://wiki.archlinux.de/title/Anleitung_f%C3%BCr_Einsteiger" title="Anleitung für Einsteiger – Deutsch" lang="de" hreflang="de">Deutsch</a></li>
+													<li class="interlanguage-link interwiki-el"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC)" title="Installation guide – Ελληνικά" lang="el" hreflang="el">Ελληνικά</a></li>
+													<li class="interlanguage-link interwiki-es"><a href="https://wiki.archlinux.org/index.php/Beginners%27_guide_(Espa%C3%B1ol)" title="Beginners' guide – español" lang="es" hreflang="es">Español</a></li>
+													<li class="interlanguage-link interwiki-fa"><a href="http://wiki.archusers.ir/index.php/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C_%D8%AA%D8%A7%D8%B2%D9%87%E2%80%8C%DA%A9%D8%A7%D8%B1%D8%A7%D9%86" title="راهنمای تازه‌کاران – فارسی" lang="fa" hreflang="fa">فارسی</a></li>
+													<li class="interlanguage-link interwiki-fr"><a href="http://wiki.archlinux.fr/Installation" title="Installation – français" lang="fr" hreflang="fr">Français</a></li>
+													<li class="interlanguage-link interwiki-hr"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Hrvatski)" title="Installation guide – hrvatski" lang="hr" hreflang="hr">Hrvatski</a></li>
+													<li class="interlanguage-link interwiki-hu"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Magyar)" title="Installation guide – magyar" lang="hu" hreflang="hu">Magyar</a></li>
+													<li class="interlanguage-link interwiki-id"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Indonesia)" title="Installation guide – Bahasa Indonesia" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+													<li class="interlanguage-link interwiki-it"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Italiano)" title="Installation guide – italiano" lang="it" hreflang="it">Italiano</a></li>
+													<li class="interlanguage-link interwiki-ja"><a href="https://wiki.archlinuxjp.org/index.php/%E3%83%93%E3%82%AE%E3%83%8A%E3%83%BC%E3%82%BA%E3%82%AC%E3%82%A4%E3%83%89" title="ビギナーズガイド – 日本語" lang="ja" hreflang="ja">日本語</a></li>
+													<li class="interlanguage-link interwiki-ko"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(%ED%95%9C%EA%B5%AD%EC%96%B4)" title="Installation guide – 한국어" lang="ko" hreflang="ko">한국어</a></li>
+													<li class="interlanguage-link interwiki-lt"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Lietuvi%C5%A1kai)" title="Installation guide – lietuvių" lang="lt" hreflang="lt">Lietuvių</a></li>
+													<li class="interlanguage-link interwiki-nl"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Nederlands)" title="Installation guide – Nederlands" lang="nl" hreflang="nl">Nederlands</a></li>
+													<li class="interlanguage-link interwiki-pl"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Polski)" title="Installation guide – polski" lang="pl" hreflang="pl">Polski</a></li>
+													<li class="interlanguage-link interwiki-pt"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Portugu%C3%AAs)" title="Installation guide – português" lang="pt" hreflang="pt">Português</a></li>
+													<li class="interlanguage-link interwiki-ro"><a href="http://wiki.archlinux.ro/index.php/Ghidul_%C3%AEncep%C4%83torilor" title="Ghidul începătorilor – română" lang="ro" hreflang="ro">Română</a></li>
+													<li class="interlanguage-link interwiki-ru"><a href="https://wiki.archlinux.org/index.php/Beginners%27_guide_(%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9)" title="Beginners' guide – русский" lang="ru" hreflang="ru">Русский</a></li>
+													<li class="interlanguage-link interwiki-sk"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(Slovensk%C3%BD)" title="Installation guide – slovenčina" lang="sk" hreflang="sk">Slovenčina</a></li>
+													<li class="interlanguage-link interwiki-sr"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(%D0%A1%D1%80%D0%BF%D1%81%D0%BA%D0%B8)" title="Installation guide – српски / srpski" lang="sr" hreflang="sr">Српски / srpski</a></li>
+													<li class="interlanguage-link interwiki-sv"><a href="http://wiki.archlinux.se/index.php?title=Nyb%C3%B6rjarguiden" title="Nybörjarguiden – svenska" lang="sv" hreflang="sv">Svenska</a></li>
+													<li class="interlanguage-link interwiki-tr"><a href="http://archtr.org/wiki/index.php?title=Yeni_ba%C5%9Flayanlar_rehberi" title="Yeni başlayanlar rehberi – Türkçe" lang="tr" hreflang="tr">Türkçe</a></li>
+													<li class="interlanguage-link interwiki-uk"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B0)" title="Installation guide – українська" lang="uk" hreflang="uk">Українська</a></li>
+													<li class="interlanguage-link interwiki-zh-cn"><a href="https://wiki.archlinux.org/index.php/Beginners%27_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)" title="Beginners' guide – 中文（中国大陆）‎" lang="zh-CN" hreflang="zh-CN">中文（中国大陆）‎</a></li>
+													<li class="interlanguage-link interwiki-zh-tw"><a href="https://wiki.archlinux.org/index.php/Installation_guide_(%E6%AD%A3%E9%AB%94%E4%B8%AD%E6%96%87)" title="Installation guide – 中文（台灣）‎" lang="zh-TW" hreflang="zh-TW">中文（台灣）‎</a></li>
+											</ul>
+
+									</div>
+			</div>
+				</div><!-- end of the left (by default at least) column -->
+		<div class="visualClear"></div>
+					<div id="footer" role="contentinfo">
+						<ul id="f-list">
+									<li id="lastmod"> This page was last modified on 17 August 2016, at 10:41.</li>
+									<li id="copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.3 or later</a> unless otherwise noted.</li>
+									<li id="privacy"><a href="/index.php/ArchWiki:Privacy_policy" title="ArchWiki:Privacy policy">Privacy policy</a></li>
+									<li id="about"><a href="/index.php/ArchWiki:About" title="ArchWiki:About">About ArchWiki</a></li>
+									<li id="disclaimer"><a href="/index.php/ArchWiki:General_disclaimer" title="ArchWiki:General disclaimer">Disclaimers</a></li>
+							</ul>
+		</div>
+		</div>
+		<script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.loader.state({"user":"ready","user.groups":"ready"});mw.loader.load(["mediawiki.toc","mediawiki.action.view.postEdit","site","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest"]);
+} );</script><script>window.RLQ = window.RLQ || []; window.RLQ.push( function () {
+mw.config.set({"wgBackendResponseTime":15});
+} );</script></body><!-- Cached/compressed 20160821041325 -->
+</html>
